@@ -139,3 +139,11 @@ exercises.c:78:9: error: assignment to ‘int’ from ‘int *’ makes integer 
    78 |    dato = (int*)first(L);
       |         ^
 4a4adbd
+Thu Mar 19 07:41:17 PM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:78:9: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   78 |    dato = (int *)first(L);
+      |         ^
+f8b05f9
