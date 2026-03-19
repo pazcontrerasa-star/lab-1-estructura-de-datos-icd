@@ -107,3 +107,14 @@ exercises.c:78:9: error: assignment to ‘int’ from ‘void *’ makes integer
    78 |    dato = first(L);
       |         ^
 499558d
+Thu Mar 19 07:38:11 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:80:15: error: comparison between pointer and integer [-Werror]
+   80 |       if(dato == elem){
+      |               ^~
+cc1: all warnings being treated as errors
+9382d48
