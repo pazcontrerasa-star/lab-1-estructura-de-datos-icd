@@ -2,3 +2,13 @@ Thu Mar 19 06:54:48 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 ebf349b
+Thu Mar 19 07:20:50 PM UTC 2026: 
+ exercises.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:59:15: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       contador+= dato;
+      |               ^~
+26ee3eb
