@@ -147,3 +147,13 @@ exercises.c:78:9: error: assignment to ‘int’ from ‘int *’ makes integer 
    78 |    dato = (int *)first(L);
       |         ^
 f8b05f9
+Thu Mar 19 07:42:53 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:78:4: error: invalid type argument of unary ‘*’ (have ‘int’)
+   78 |    *dato = (int *)first(L);
+      |    ^~~~~
+eb37154
