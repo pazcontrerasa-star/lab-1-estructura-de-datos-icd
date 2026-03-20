@@ -94,13 +94,14 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2) {
    Stack* pila_axiliar = create_stack();
-   while(P1 !=NULL){
-      int *elemento = (int *)top(P1);
+   
+   int *elemento = (int *)top(P1);
+   while(P1 !=NULL){   
       push(pila_axiliar, *elemento);
       pop(P1);
    }
+   int *elemento = (int *)top(pila_auxiliar);
    while(pila_auxiliar!=NULL){
-      int *elemento = (int *)top(pila_auxiliar);
       push(P1,*elemento);
       push(P2, *elemento);
       pop(pila_auxiliar);
