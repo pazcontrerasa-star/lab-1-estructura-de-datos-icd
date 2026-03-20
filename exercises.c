@@ -58,7 +58,7 @@ int sumaLista(List *L) {
    while(dato != NULL){
       
       contador+= *dato;
-      dato = next(L);
+      dato = (int *)next(L);
       
    }
    return contador;
