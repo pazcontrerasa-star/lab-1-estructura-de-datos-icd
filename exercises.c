@@ -97,13 +97,13 @@ void copia_pila(Stack* P1, Stack* P2) {
    
    int *elemento = (int *)top(P1);
    while(P1 !=NULL){   
-      push(pila_axiliar, *elemento);
+      push(pila_axiliar, elemento);
       pop(P1);
    }
    int *elemento = (int *)top(pila_auxiliar);
    while(pila_auxiliar!=NULL){
-      push(P1,*elemento);
-      push(P2, *elemento);
+      push(P1,elemento);
+      push(P2, elemento);
       pop(pila_auxiliar);
    }
    free(pila_axiliar);

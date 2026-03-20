@@ -692,3 +692,21 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
    11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
       |                         ~~~~~~^~~~
 c4c73bc
+Fri Mar 20 03:04:14 AM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:9: error: redefinition of ‘elemento’
+  103 |    int *elemento = (int *)top(pila_auxiliar);
+      |         ^~~~~~~~
+exercises.c:98:9: note: previous definition of ‘elemento’ with type ‘int *’
+   98 |    int *elemento = (int *)top(P1);
+      |         ^~~~~~~~
+exercises.c:103:31: error: ‘pila_auxiliar’ undeclared (first use in this function); did you mean ‘pila_axiliar’?
+  103 |    int *elemento = (int *)top(pila_auxiliar);
+      |                               ^~~~~~~~~~~~~
+      |                               pila_axiliar
+exercises.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
+35f0882
