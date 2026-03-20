@@ -710,3 +710,15 @@ exercises.c:103:31: error: ‘pila_auxiliar’ undeclared (first use in this fun
       |                               pila_axiliar
 exercises.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
 35f0882
+Fri Mar 20 03:05:25 AM UTC 2026: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:25: error: ‘pila_auxiliar’ undeclared (first use in this function); did you mean ‘pila_axiliar’?
+  105 |    element = (int *)top(pila_auxiliar);
+      |                         ^~~~~~~~~~~~~
+      |                         pila_axiliar
+exercises.c:105:25: note: each undeclared identifier is reported only once for each function it appears in
+c97c2e1
