@@ -588,3 +588,27 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
    11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
       |                         ~~~~~~^~~~
 224a979
+Fri Mar 20 02:54:41 AM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:98:22: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   98 |       int elemento = (int *)top(P1);
+      |                      ^
+exercises.c:99:26: error: invalid type argument of unary ‘*’ (have ‘int’)
+   99 |       push(pila_axiliar, *elemento);
+      |                          ^~~~~~~~~
+exercises.c:102:10: error: ‘pila_auxiliar’ undeclared (first use in this function); did you mean ‘pila_axiliar’?
+  102 |    while(pila_auxiliar!=NULL){
+      |          ^~~~~~~~~~~~~
+      |          pila_axiliar
+exercises.c:102:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:104:15: error: invalid type argument of unary ‘*’ (have ‘int’)
+  104 |       push(P1,*elemento);
+      |               ^~~~~~~~~
+exercises.c:105:16: error: invalid type argument of unary ‘*’ (have ‘int’)
+  105 |       push(P2, *elemento);
+      |                ^~~~~~~~~
+bf13853
