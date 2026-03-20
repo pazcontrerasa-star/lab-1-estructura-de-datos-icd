@@ -380,3 +380,18 @@ exercises.c:83:12: error: assignment to ‘int’ from ‘int *’ makes integer
       |            ^
 cc1: all warnings being treated as errors
 3a714dd
+Fri Mar 20 02:26:11 AM UTC 2026: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:80:15: error: comparison between pointer and integer [-Werror]
+   80 |       if(dato == elem){
+      |               ^~
+exercises.c: At top level:
+exercises.c:86:1: error: expected identifier or ‘(’ before ‘}’ token
+   86 | }
+      | ^
+cc1: all warnings being treated as errors
+c2e55a9
