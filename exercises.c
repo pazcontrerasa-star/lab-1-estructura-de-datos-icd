@@ -54,10 +54,10 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int *dato;
    int contador =0;
-   dato = first(L);
+   dato = (int *)first(L);
    while(dato != NULL){
       
-      contador+= dato;
+      contador+= *dato;
       dato = next(L);
       
    }
