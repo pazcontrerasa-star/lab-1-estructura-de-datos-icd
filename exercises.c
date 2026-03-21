@@ -137,7 +137,6 @@ int parentesisBalanceados(char *cadena) {
             return 0;
          }
       }
-      pop(auxiliar);
       i++;
    }
    int tallaFinal = get_size(auxiliar);
