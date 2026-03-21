@@ -728,3 +728,23 @@ Sat Mar 21 04:55:18 AM UTC 2026:
  tests:  4|1
 total_score: 50/70
 08f9f0e
+Sat Mar 21 05:15:58 AM UTC 2026: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:22: error: initialization of ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  123 |    char *caracter1 = '(';
+      |                      ^~~
+exercises.c:124:22: error: initialization of ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  124 |    char *caracter2 = ')';
+      |                      ^~~
+exercises.c:128:20: error: comparison between pointer and integer [-Werror]
+  128 |       if(cadena[i] == caracter1){
+      |                    ^~
+exercises.c:130:25: error: comparison between pointer and integer [-Werror]
+  130 |       }else if(cadena[i]== caracter2){
+      |                         ^~
+cc1: all warnings being treated as errors
+0e5fbf0
