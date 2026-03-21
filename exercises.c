@@ -120,8 +120,8 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   char *caracter1 = '(';
-   char *caracter2 = ')';
+   char caracter1 = '(';
+   char caracter2 = ')';
    int balanceado = 0;
    int i =0;
    while(cadena[i] != '\0'){
