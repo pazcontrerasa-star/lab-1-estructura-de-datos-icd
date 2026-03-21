@@ -124,12 +124,12 @@ int parentesisBalanceados(char *cadena) {
    
    int i =0;
    while(cadena[i] != '\0'){
-      if(cadena[i] == '(' || cadena[i] == '{' || cadena[i]= = '['){
+      if(cadena[i] == '(' || cadena[i] == '{' || cadena[i] == '['){
          push(auxiliar, &cadena[i]);
       }
-      else if(cadena[i] == ')' || cadena[i] == '}' || cadena[i]= = ']' ){
+      else if(cadena[i] == ')' || cadena[i] == '}' || cadena[i] == ']' ){
          int tamano = get_size(auxiliar);
-         if(tamano ==0){
+         if(tamano == 0){
             return =0;
          }
          char *segundo = (char*) pop(auxiliar);
