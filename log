@@ -754,3 +754,30 @@ Sat Mar 21 05:16:24 AM UTC 2026:
  tests:  7|1
 total_score: 60/70
 6baec2f
+Sat Mar 21 06:43:58 AM UTC 2026: 
+ exercises.c | 25 +++++++++++++++++--------
+ 1 file changed, 17 insertions(+), 8 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:127:61: error: expected expression before ‘=’ token
+  127 |       if(cadena[i] == '(' || cadena[i] == '{' || cadena[i]= = '['){
+      |                                                             ^
+exercises.c:130:66: error: expected expression before ‘=’ token
+  130 |       else if(cadena[i] == ')' || cadena[i] == '}' || cadena[i]= = ']' ){
+      |                                                                  ^
+exercises.c:132:13: error: ‘tamano’ undeclared (first use in this function)
+  132 |          if(tamano ==0){
+      |             ^~~~~~
+exercises.c:132:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:133:20: error: expected expression before ‘=’ token
+  133 |             return =0;
+      |                    ^
+exercises.c:136:29: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |          if(*segundo == '(' && cadena[i] != ')' || *segundo == '{' && cadena[i] != '}' || *segundo == '[' && cadena[i] != ']'){
+      |             ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+exercises.c:136:107: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  136 |          if(*segundo == '(' && cadena[i] != ')' || *segundo == '{' && cadena[i] != '}' || *segundo == '[' && cadena[i] != ']'){
+      |                                                                                           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+aef43f6
