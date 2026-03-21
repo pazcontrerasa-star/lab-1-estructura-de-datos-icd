@@ -43,6 +43,11 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+   for(int i = 1; i<=10; i++){
+      int* num1 = (int *)malloc(sizeof(int));
+      *num1 = i;
+      push(L, num1);
+   }
    return L;
 }
 
@@ -93,22 +98,18 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   Stack* pila_axiliar = create_stack();
+   Stack* pila_auxiliar = create_stack();
+   void *elemento;
    
-   int *elemento;
-   elemento = (int *)top(P1);
-   while(P1 !=NULL){   
-      push(pila_axiliar, elemento);
-      pop(P1);
+   while((elemento = pop(P1)) !=NULL){   
+      push(pila_auxiliar, elemento);
    }
-   int *element;
-   element = (int *)top(pila_auxiliar);
-   while(pila_auxiliar!=NULL){
-      push(P1,element);
-      push(P2, element);
-      pop(pila_auxiliar);
+   
+   while((elemento = pop(pila_auxiliar))!=NULL){
+      push(P1,elemento);
+      push(P2, elemento);
    }
-   free(pila_axiliar);
+   free(pila_auxiliar);
 }
 
 /*

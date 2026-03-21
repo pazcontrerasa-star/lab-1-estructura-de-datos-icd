@@ -722,3 +722,9 @@ exercises.c:105:25: error: ‘pila_auxiliar’ undeclared (first use in this fun
       |                         pila_axiliar
 exercises.c:105:25: note: each undeclared identifier is reported only once for each function it appears in
 c97c2e1
+Sat Mar 21 04:55:18 AM UTC 2026: 
+ exercises.c | 27 ++++++++++++++-------------
+ 1 file changed, 14 insertions(+), 13 deletions(-)
+ tests:  4|1
+total_score: 50/70
+08f9f0e
